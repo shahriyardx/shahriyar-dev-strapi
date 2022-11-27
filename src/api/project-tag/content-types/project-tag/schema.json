@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_tags",
+  "info": {
+    "singularName": "project-tag",
+    "pluralName": "project-tags",
+    "displayName": "ProjectTag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "bg_color": {
+      "type": "customField",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "text_color": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "required": true
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "inversedBy": "tags"
+    }
+  }
+}
