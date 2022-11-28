@@ -16,6 +16,8 @@
     "@strapi/plugin-i18n": "4.5.2",
     "@strapi/plugin-users-permissions": "4.5.2",
     "@strapi/strapi": "4.5.2",
+    "@types/node-fetch": "^2.6.2",
+    "node-fetch": "2.6.1",
     "pg": "8.6.0",
     "react-is": "^18.2.0",
     "webpack": "^5.75.0"
